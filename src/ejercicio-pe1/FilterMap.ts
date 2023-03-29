@@ -10,10 +10,11 @@ export abstract class FilterMap {
    * @param _filterCallback Callback usado en filter
    * @param _mapCallback Callback usado en map
    */
-  constructor(protected _numberCollection: number[],
+  constructor(
+    protected _numberCollection: number[],
     protected _filterCallback: (i: number) => boolean,
-    protected _mapCallback: (i: number) => number,
-    ) {}
+    protected _mapCallback: (i: number) => number
+  ) {}
 
   /**
    * Getter de la colección de numeros
@@ -61,7 +62,7 @@ export abstract class FilterMap {
    * Método que realiza el filtrado del algoritmo
    * @returns Lista de números filtrada
    */
-  protected filter(): number[] {
+  public filter(): number[] {
     const newList: number[] = [];
     let i = 0;
     let j = 0;
@@ -80,7 +81,7 @@ export abstract class FilterMap {
    * @param array Array de números
    * @returns Lista de números mapeada
    */
-  protected map(array: number[]): number[] {
+  public map(array: number[]): number[] {
     const newList: number[] = [];
     let i = 0;
     while (array[i] !== undefined) {
@@ -93,7 +94,7 @@ export abstract class FilterMap {
   /**
    * Método abstrcto que se encarga de la operación reduce
    */
-  protected abstract reduce(array: number[]): number
+  protected abstract reduce(array: number[]): number;
 
   /**
    * Método hook situado despues del filter
@@ -104,7 +105,7 @@ export abstract class FilterMap {
    * Método hook situado despues del map
    */
   protected postMap() {}
- /**
+  /**
    * Método hook situado despues del reduce
    */
   protected postReduce() {}
@@ -113,13 +114,12 @@ export abstract class FilterMap {
    * Método que ejecuta el algoritmo
    */
   public run() {
-    let array: number[] = this.filter()
-    this.postFilter()
-    array = this.map(array)
-    this.postMap()
-    const value = this.reduce(array)
-    this.postReduce()
-    return value
-  } 
+    let array: number[] = this.filter();
+    this.postFilter();
+    array = this.map(array);
+    this.postMap();
+    const value = this.reduce(array);
+    this.postReduce();
+    return value;
+  }
 }
-  

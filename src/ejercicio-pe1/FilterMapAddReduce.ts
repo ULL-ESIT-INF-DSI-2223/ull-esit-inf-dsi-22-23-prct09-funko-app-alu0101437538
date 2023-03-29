@@ -1,4 +1,4 @@
-import {FilterMap} from "./FilterMap"
+import { FilterMap } from "./FilterMap";
 
 /**
  * Clase que hereda de FilterMAp e implmeneta un reduce con add
@@ -8,12 +8,13 @@ export class FilterMapAddReduce extends FilterMap {
    * Constructo de la clase
    * @param numberCollection Colección de números
    */
-  constructor(numberCollection: number[],
+  constructor(
+    numberCollection: number[],
     callback1: (i: number) => boolean,
-    callback2: (i: number) => number,
-    ) {
-    super(numberCollection, callback1, callback2)
-    }
+    callback2: (i: number) => number
+  ) {
+    super(numberCollection, callback1, callback2);
+  }
 
   /**
    * Implementación del método reduce de la superclase
