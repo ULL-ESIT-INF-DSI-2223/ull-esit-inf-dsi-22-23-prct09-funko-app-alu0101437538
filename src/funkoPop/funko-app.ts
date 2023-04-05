@@ -311,4 +311,4 @@ yargs(hideBin(process.argv))
       }
     }
   )
-  .help().argv;
+  .help().argv

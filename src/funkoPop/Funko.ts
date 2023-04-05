@@ -31,7 +31,11 @@ export class Funko {
     private _caracteristicasEsp: string | undefined,
     private _valor: number
   ) {
-    if (/\.|-/.test(_id.toString()) === true || _id === undefined || _id === 0) {
+    if (
+      /\.|-/.test(_id.toString()) === true ||
+      _id === undefined ||
+      _id === 0
+    ) {
       throw new Error("El ID del funko debe ser un número entero positivo");
     }
     if (/\.|-/.test(_numero.toString()) === true || _numero === undefined) {
@@ -253,7 +257,10 @@ export class Funko {
     console.log(chalk.blue(`Número de colección =`) + ` ${this._numero}`);
     str += `\n¿Exlusivo? = ${this._exclusivo}`;
     console.log(chalk.blue(`¿Exlusivo? =`) + ` ${this._exclusivo}`);
-    if (this._caracteristicasEsp !== undefined && this._caracteristicasEsp !== "") {
+    if (
+      this._caracteristicasEsp !== undefined &&
+      this._caracteristicasEsp !== ""
+    ) {
       str += `\nCaracterísticas Especiales = ${this._caracteristicasEsp}`;
       console.log(
         chalk.blue(`Características Especiales =`) +
