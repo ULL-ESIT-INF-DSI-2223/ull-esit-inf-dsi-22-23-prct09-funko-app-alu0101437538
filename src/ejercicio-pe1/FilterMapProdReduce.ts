@@ -1,4 +1,4 @@
-import { FilterMap } from "./FilterMap";
+import { FilterMap } from "./FilterMap.js";
 
 /**
  * Clase que hereda de FilterMap e implmeneta un reduce con el producto

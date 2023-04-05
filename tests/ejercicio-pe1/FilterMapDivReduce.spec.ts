@@ -1,6 +1,6 @@
 import "mocha";
 import { expect } from "chai";
-import { FilterMapDivReduce } from "../../src/ejercicio-pe1/FilterMapDivReduce";
+import { FilterMapDivReduce } from "../../src/ejercicio-pe1/FilterMapDivReduce.js";
 
 describe("Test de FilterMapDivReduce", () => {
   it("Se instancia la clase correctamente", () => {

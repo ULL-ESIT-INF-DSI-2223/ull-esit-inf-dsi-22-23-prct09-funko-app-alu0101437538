@@ -1,6 +1,6 @@
 import "mocha";
 import { expect } from "chai";
-import { FilterMapSubReduce } from "../../src/ejercicio-pe1/FilterMapSubReduce";
+import { FilterMapSubReduce } from "../../src/ejercicio-pe1/FilterMapSubReduce.js";
 
 describe("Test de FilterMapSubReduce", () => {
   it("Se instancia la clase correctamente", () => {
