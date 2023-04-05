@@ -63,61 +63,17 @@ yargs(hideBin(process.argv))
     "addFunko",
     "Añade un funko",
     {
-      user: {
-        description: "Usuario del Funko",
-        type: "string",
-        demandOption: true,
-      },
-      id: {
-        description: "ID del Funko",
-        type: "number",
-        demandOption: true,
-      },
-      name: {
-        description: "Nombre del Funko",
-        type: "string",
-        demandOption: true,
-      },
-      desc: {
-        description: "Descripción del Funko",
-        type: "string",
-        demandOption: true,
-      },
-      type: {
-        description: "Tipo del Funko",
-        type: "string",
-        demandOption: true,
-      },
-      genre: {
-        description: "Género del Funko",
-        type: "string",
-        demandOption: true,
-      },
-      franchise: {
-        description: "Franquicia del Funko",
-        type: "string",
-        demandOption: true,
-      },
-      number: {
-        description: "Número del Funko",
-        type: "number",
-        demandOption: true,
-      },
-      exclusive: {
-        description: "Exclusividad del Funko",
-        type: "boolean",
-        demandOption: true,
-      },
-      special: {
-        description: "Características Especiales del Funko",
-        type: "string",
-        demandOption: false,
-      },
-      value: {
-        description: "Valor del Funko",
-        type: "number",
-        demandOption: true,
-      },
+      user: {description: "Usuario del Funko",type: "string",demandOption: true},
+      id: {description: "ID del Funko",type: "number",demandOption: true},
+      name: {description: "Nombre del Funko",type: "string",demandOption: true},
+      desc: {description: "Descripción del Funko",type: "string",demandOption: true},
+      type: {description: "Tipo del Funko",type: "string",demandOption: true},
+      genre: {description: "Género del Funko",type: "string",demandOption: true},
+      franchise: {description: "Franquicia del Funko",type: "string",demandOption: true},
+      number: {description: "Número del Funko",type: "number",demandOption: true},
+      exclusive: {description: "Exclusividad del Funko",type: "boolean",demandOption: true},
+      special: {description: "Características Especiales del Funko",type: "string",demandOption: false},
+      value: {description: "Valor del Funko",type: "number",demandOption: true},
     },
     (argv) => {
       try {
@@ -150,61 +106,17 @@ yargs(hideBin(process.argv))
     "modFunko",
     "Modifica un funko",
     {
-      user: {
-        description: "Usuario del Funko",
-        type: "string",
-        demandOption: true,
-      },
-      id: {
-        description: "ID del Funko",
-        type: "number",
-        demandOption: true,
-      },
-      name: {
-        description: "Nombre del Funko",
-        type: "string",
-        demandOption: true,
-      },
-      desc: {
-        description: "Descripción del Funko",
-        type: "string",
-        demandOption: true,
-      },
-      type: {
-        description: "Tipo del Funko",
-        type: "string",
-        demandOption: true,
-      },
-      genre: {
-        description: "Género del Funko",
-        type: "string",
-        demandOption: true,
-      },
-      franchise: {
-        description: "Franquicia del Funko",
-        type: "string",
-        demandOption: true,
-      },
-      number: {
-        description: "Número del Funko",
-        type: "number",
-        demandOption: true,
-      },
-      exclusive: {
-        description: "Exclusividad del Funko",
-        type: "boolean",
-        demandOption: true,
-      },
-      special: {
-        description: "Características Especiales del Funko",
-        type: "string",
-        demandOption: false,
-      },
-      value: {
-        description: "Valor del Funko",
-        type: "number",
-        demandOption: true,
-      },
+      user: {description: "Usuario del Funko",type: "string",demandOption: true},
+      id: {description: "ID del Funko",type: "number",demandOption: true},
+      name: {description: "Nombre del Funko",type: "string",demandOption: true},
+      desc: {description: "Descripción del Funko",type: "string",demandOption: true},
+      type: {description: "Tipo del Funko",type: "string",demandOption: true},
+      genre: {description: "Género del Funko",type: "string",demandOption: true},
+      franchise: {description: "Franquicia del Funko",type: "string",demandOption: true},
+      number: {description: "Número del Funko",type: "number",demandOption: true},
+      exclusive: {description: "Exclusividad del Funko",type: "boolean",demandOption: true},
+      special: {description: "Características Especiales del Funko",type: "string",demandOption: false},
+      value: {description: "Valor del Funko",type: "number",demandOption: true},
     },
     (argv) => {
       try {
